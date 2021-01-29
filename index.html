@@ -1,39 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive pricing component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+  <div class="container">
+    <div class="text">
+      <h2 style="font-size: 2rem;"> Simple, traffic-based pricing</h2>
+      <h4>Sign-up for our 30-day trial. No credit card required.</h4>
+    </div>
 
-  Pageviews
-  $ /month
+    <div class="Circles">
+      <div class="Small circle">
 
-  Monthly Billing
-  Yearly Billing 25% discount
+        <div class="Large circle"></div>
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+      </div>
+    </div>
 
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+
+    <div class="card">
+
+      <div class="div1">
+      <span> <b> 100k</b> Pageviews</span>
+      <span> <b>$16.00 </b>/month</span>
+    </div>
+
+      <div class="slideContainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div>
+
+      <div class="toggle">
+         Monthly Billing
+        <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+        Yearly Billing <div class="discount">25% discount</div>
+      </div>
+
+      <hr>
+
+      <div class="div4">
+        <ul>
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+        <button class="btn">Start my trial</button>
+                  
+      </div>
+
+
+
+    </div>
   </div>
+
+
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
 </body>
+
 </html>
