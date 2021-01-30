@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +12,8 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
 }
 
 .circle{
@@ -31,6 +34,9 @@ top:4rem;
    position: absolute;
    top: 5rem; 
 }
+.text h2{
+   font-weight: 800;
+}
 
 .Large{
     height: 100px;
@@ -46,12 +52,13 @@ top:4rem;
     height: 30rem;
     width: 30rem;
      position: relative;
-     top: 11rem;
+     top: 12rem;
     background-color: #fff;
     border-radius: 15px;
     /* text-align: center; */
     box-shadow: 0 0 5px 0.1px #888888 ;
     padding: 2rem;
+    color:  hsl(225, 20%, 60%);
     }
 
 body{
@@ -90,7 +97,7 @@ margin-top: 2rem;
     appearance: none;
     width: 25px;
     height: 25px;
-    background: hsl(155, 65%, 44%);
+    background: hsl(174, 77%, 80%);
     cursor: pointer;
      border-radius: 50%;
  }
@@ -110,7 +117,7 @@ margin-top: 2rem;
 
 .toggle{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     margin-bottom: 2rem;
 }
 
@@ -157,8 +164,8 @@ label:active:after {
 }
 
 .btn{
- background-color: rgb(28, 28, 71);   
- color: white;
+ background-color: hsl(227, 35%, 25%);   
+ color: hsl(226, 100%, 87%);
  border-radius: 2rem;
  width: 40%;
  height: 40px;
@@ -167,8 +174,8 @@ label:active:after {
  }
 
  .discount{
-     color: rgb(172, 47, 68);
-     background-color: rgb(255, 221, 233);
+     color: hsl(15, 100%, 70%);
+     background-color: hsl(14, 92%, 95%);
      border-radius: 25%;
      text-align: center;
      font-size: 0.8rem;
